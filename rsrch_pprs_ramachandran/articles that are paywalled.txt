@@ -1,0 +1,3 @@
+articles that are paywalled: 
+-Demas, M. Hary, G. Genty, S. Ramachandran, “Optimization and realignment of OAM mode excitation in ring-core optical fibers using machine learning,” Optics Letters 49, 5003 (2024).
+-.D. White, L. Su, D.I. Shahar, K.Y. Yang, G.Ho Ahn, J.L. Skarda, S. Ramachandran, J. Vučković, “Inverse Design of Optical Vortex Beam Emitters,” ACS Photonics doi: 10.1021/acsphotonics.2c01007 (2022).
