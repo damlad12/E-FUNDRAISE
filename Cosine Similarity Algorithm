@@ -1,0 +1,128 @@
+import torch
+from transformers import BertTokenizer, BertModel
+
+# Load the tokenizer and model
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+model = BertModel.from_pretrained('bert-base-uncased')
+
+# Function to chunk text
+def chunk_text(text, max_length=512, overlap=50):
+    tokens = tokenizer.encode(text, add_special_tokens=True)
+    chunks = []
+    for i in range(0, len(tokens), max_length - overlap):
+        chunk = tokens[i:i + max_length]
+        chunks.append(chunk)
+    return chunks
+
+# Input text (larger body of text)
+long_text = "Your long input text here..."
+
+# Chunk the text
+chunks = chunk_text(long_text)
+
+# Get embeddings for each chunk
+embeddings = []
+for chunk in chunks:
+    inputs = tokenizer.decode(chunk)
+    input_tensor = tokenizer(inputs, return_tensors='pt', padding=True, truncation=True)
+
+    with torch.no_grad():
+        outputs = model(**input_tensor)
+
+    # Use the [CLS] token's embedding for each chunk
+    chunk_embedding = outputs.last_hidden_state[:, 0, :]
+    embeddings.append(chunk_embedding)
+
+# Average the chunk embeddings
+final_embedding = torch.mean(torch.stack(embeddings), dim=0)
+
+print(final_embedding)
+
+!pip install PyPDF2
+
+!pip install umap-learn
+
+from google.colab import drive
+drive.mount('/content/drive', force_remount = True)
+PATH_OF_PAPERS = '/content/drive/MyDrive/rsrch_pprs_2018/'
+#PATH_OF_GRANT = '/content/drive/MyDrive/b2742ee7-0425-4be7-9a58-c9b219790113.pdf'
+PATH_OF_GRANT = '/content/drive/MyDrive/62cd5d8a-f66c-496c-bf4d-f02c756bfea2.pdf'
+
+import os
+import re
+import pandas as pd
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import word_tokenize
+import PyPDF2
+import torch
+from transformers import AutoTokenizer, AutoModel
+import numpy as np
+import umap
+import matplotlib.pyplot as plt
+
+# Creating embeddings of the research papers
+processed_papers = []
+
+for file in os.listdir(PATH_OF_PAPERS):
+  if file.endswith(".pdf"):
+        pdf_path = os.path.join(PATH_OF_PAPERS, file)
+        extracted_text = ""
+        with open(pdf_path, "rb") as file:
+          reader = PyPDF2.PdfReader(file)
+          for page_number in range(len(reader.pages)):
+              extracted_text += reader.pages[page_number].extract_text()
+          processed_papers.append({"file_name": file, "text": extracted_text})
+
+def create_embedding(chunks):
+  embeddings = []
+  for chunk in chunks:
+      inputs = tokenizer.decode(chunk)
+      input_tensor = tokenizer(inputs, return_tensors='pt', padding=True, truncation=True)
+
+      with torch.no_grad():
+        outputs = model(**input_tensor)
+      # Use the [CLS] token's embedding for each chunk
+      chunk_embedding = outputs.last_hidden_state[:, 0, :]
+      embeddings.append(chunk_embedding)
+  return torch.mean(torch.stack(embeddings), dim=0)
+
+df = pd.DataFrame(processed_papers)
+df['chunks'] = df['text'].apply(chunk_text)
+
+df['embedding'] = df['chunks'].apply(create_embedding)
+
+embedding_matrix = torch.stack(df['embedding'].tolist())
+single_researcher_profile = torch.mean(embedding_matrix, dim=0)
+
+print(single_researcher_profile)
+
+# Read and extract grant info from the PDF
+extracted_text = ""
+with open(PATH_OF_GRANT, "rb") as f:
+    reader = PyPDF2.PdfReader(f)
+    for page_number in range(len(reader.pages)):
+        extracted_text += reader.pages[page_number].extract_text()
+
+# Chunk the extracted text
+chunks = chunk_text(extracted_text)
+
+# Create the embedding
+grant_embedding = create_embedding(chunks)
+
+# Print the final embedding vector
+print(grant_embedding)
+
+# Calculate cosine similarity
+def cosine_similarity(profile_embedding, grant_embedding):
+    profile_embedding = profile_embedding.view(-1)
+    grant_embedding = grant_embedding.view(-1)
+    dot_product = torch.dot(profile_embedding, grant_embedding)
+    norm1 = torch.norm(profile_embedding, p=2)
+    norm2 = torch.norm(grant_embedding, p=2)
+    cosine_sim = dot_product / (norm1 * norm2)
+    return cosine_sim.item()
+if grant_embedding is not None and single_researcher_profile is not None:
+  similarity = cosine_similarity(single_researcher_profile, grant_embedding)
+  print(f"Cosine Similarity between the grant and the researcher profile: {similarity}")
