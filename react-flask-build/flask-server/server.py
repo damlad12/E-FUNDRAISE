@@ -3,10 +3,11 @@ from flask_cors import CORS
 import os
 import tiktoken
 from file_manip import is_folder_empty, extract_text_from_pdfs_in_folder, split_text_into_chunks
-from get_summary import call_assistant_with_file , get_text_embedding, cosine_similarity
+from get_summary import call_assistant_with_file
 from dotenv import load_dotenv
 import logging
 import time
+import shutil
 
 load_dotenv()
 
@@ -32,6 +33,19 @@ def upload_file_folder1():
 @app.route("/upload/folder2", methods=["POST"])
 def upload_file_folder2():
     return upload_files_to_folder(app.config['UPLOAD_FOLDER_2'])
+
+@app.route("/clear_uploads", methods=["POST"])
+def clear_uploads():
+    try:
+        shutil.rmtree(UPLOAD_FOLDER_1)
+        os.makedirs(UPLOAD_FOLDER_1)
+        shutil.rmtree(UPLOAD_FOLDER_2)
+        os.makedirs(UPLOAD_FOLDER_2)
+        logging.info("Upload folders cleared successfully.")
+        return jsonify({"message": "Upload folders cleared successfully."}), 200
+    except Exception as e:
+        logging.error(f"Error occurred while clearing upload folders: {e}")
+        return jsonify({"error": f"An error occurred while clearing upload folders: {e}"}), 500
 
 def upload_files_to_folder(folder):
     try:
@@ -76,11 +90,8 @@ def compute_similarity():
         logging.info("Processing PDFs in folder 2...")
         final_grant_sum = process_pdfs_in_folder(UPLOAD_FOLDER_2, api_key)
 
-        grnt_embedding = get_text_embedding(final_grant_sum)
-        rsrch_embedding = get_text_embedding(final_rsrch_sum)
-
         # Placeholder for actual similarity computation
-        similarity_score = cosine_similarity(grnt_embedding,rsrch_embedding)
+        similarity_score = "Similarity score logic not yet implemented."
 
         logging.info("Similarity computed successfully.")
         return jsonify({"message": "Similarity computed successfully", "similarity_score": similarity_score}), 200

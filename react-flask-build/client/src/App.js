@@ -72,6 +72,28 @@ function FileUpload() {
       setSimilarityResult('An error occurred while computing similarity');
     }
   };
+
+  const clearUploads = async () => {
+    setUploadStatus('');
+    setIsUploadSuccessful(false);
+
+    try {
+      const response = await fetch('http://localhost:5000/clear_uploads', {
+        method: 'POST',
+      });
+
+      if (response.ok) {
+        setUploadStatus('Upload folders cleared successfully');
+        setIsUploadSuccessful(true);
+      } else {
+        const errorData = await response.json();
+        setUploadStatus('Failed to clear uploads: ' + (errorData.error || 'Unknown error'));
+      }
+    } catch (error) {
+      console.error('Error clearing uploads:', error);
+      setUploadStatus('An error occurred while clearing the upload folders');
+    }
+  };
   
   return (
     <div style={{ padding: '20px' }}>
@@ -87,6 +109,9 @@ function FileUpload() {
       </div>
       <div style={{ marginBottom: '20px' }}>
         <button onClick={computeSimilarity}>Compute Similarity</button>
+      </div>
+      <div style={{ marginBottom: '20px' }}>
+        <button onClick={clearUploads}>Clear Uploads</button>
       </div>
       {uploadStatus && (
         <p style={{ color: isUploadSuccessful ? 'green' : 'red' }}>{uploadStatus}</p>
