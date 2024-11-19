@@ -161,3 +161,6 @@
 2024-11-18 23:46:40,644 Error during chunk summarization (attempt 1): The run failed to complete successfully.
 2024-11-18 23:47:25,046 127.0.0.1 - - [18/Nov/2024 23:47:25] "POST /compute_similarity HTTP/1.1" 200 -
 2024-11-18 23:48:05,724  * Detected change in 'C:\\Users\\mayke\\Documents\\Code\\E-FUNDRAISE\\react-flask-build\\flask-server\\get_summary.py', reloading
+2024-11-18 23:48:07,089  * Restarting with stat
+2024-11-18 23:48:15,782  * Debugger is active!
+2024-11-18 23:48:15,782  * Debugger PIN: 107-127-907
