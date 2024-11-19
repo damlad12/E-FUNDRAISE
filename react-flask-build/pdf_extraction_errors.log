@@ -123,3 +123,41 @@
 2024-11-18 23:30:15,967  * Restarting with stat
 2024-11-18 23:30:24,081  * Debugger is active!
 2024-11-18 23:30:24,091  * Debugger PIN: 107-127-907
+2024-11-18 23:34:06,654 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-18 23:34:06,654 [33mPress CTRL+C to quit[0m
+2024-11-18 23:34:06,654  * Restarting with stat
+2024-11-18 23:34:14,865  * Debugger is active!
+2024-11-18 23:34:14,873  * Debugger PIN: 107-127-907
+2024-11-18 23:34:14,907 127.0.0.1 - - [18/Nov/2024 23:34:14] "POST /clear_uploads HTTP/1.1" 200 -
+2024-11-18 23:34:25,210 127.0.0.1 - - [18/Nov/2024 23:34:25] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-18 23:34:29,696 127.0.0.1 - - [18/Nov/2024 23:34:29] "POST /clear_uploads HTTP/1.1" 200 -
+2024-11-18 23:38:56,755 127.0.0.1 - - [18/Nov/2024 23:38:56] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-18 23:39:43,732 127.0.0.1 - - [18/Nov/2024 23:39:43] "[31m[1mPOST /compute_similarity HTTP/1.1[0m" 400 -
+2024-11-18 23:40:19,346 127.0.0.1 - - [18/Nov/2024 23:40:19] "POST /upload/folder2 HTTP/1.1" 200 -
+2024-11-18 23:42:06,833 127.0.0.1 - - [18/Nov/2024 23:42:06] "POST /compute_similarity HTTP/1.1" 200 -
+2024-11-18 23:42:56,682  * Detected change in 'C:\\Users\\mayke\\Documents\\Code\\E-FUNDRAISE\\react-flask-build\\flask-server\\server.py', reloading
+2024-11-18 23:42:57,939  * Restarting with stat
+2024-11-18 23:43:08,002  * Debugger is active!
+2024-11-18 23:43:08,008  * Debugger PIN: 107-127-907
+2024-11-18 23:43:51,662  * Detected change in 'C:\\Users\\mayke\\Documents\\Code\\E-FUNDRAISE\\react-flask-build\\flask-server\\server.py', reloading
+2024-11-18 23:43:52,843  * Restarting with stat
+2024-11-18 23:44:03,173  * Debugger is active!
+2024-11-18 23:44:03,182  * Debugger PIN: 107-127-907
+2024-11-18 23:44:36,673  * Detected change in 'C:\\Users\\mayke\\Documents\\Code\\E-FUNDRAISE\\react-flask-build\\flask-server\\server.py', reloading
+2024-11-18 23:44:37,574  * Restarting with stat
+2024-11-18 23:44:46,653  * Debugger is active!
+2024-11-18 23:44:46,660  * Debugger PIN: 107-127-907
+2024-11-18 23:44:49,714  * Detected change in 'C:\\Users\\mayke\\Documents\\Code\\E-FUNDRAISE\\react-flask-build\\flask-server\\server.py', reloading
+2024-11-18 23:44:50,737  * Restarting with stat
+2024-11-18 23:45:00,330  * Debugger is active!
+2024-11-18 23:45:00,338  * Debugger PIN: 107-127-907
+2024-11-18 23:45:21,318 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-18 23:45:21,319 [33mPress CTRL+C to quit[0m
+2024-11-18 23:45:21,322  * Restarting with stat
+2024-11-18 23:45:30,003  * Debugger is active!
+2024-11-18 23:45:30,003  * Debugger PIN: 107-127-907
+2024-11-18 23:46:40,644 Error during chunk summarization (attempt 1): The run failed to complete successfully.
+2024-11-18 23:47:25,046 127.0.0.1 - - [18/Nov/2024 23:47:25] "POST /compute_similarity HTTP/1.1" 200 -
+2024-11-18 23:48:05,724  * Detected change in 'C:\\Users\\mayke\\Documents\\Code\\E-FUNDRAISE\\react-flask-build\\flask-server\\get_summary.py', reloading

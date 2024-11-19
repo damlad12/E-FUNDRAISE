@@ -91,7 +91,7 @@ model = BertModel.from_pretrained('bert-base-uncased')
 
 def get_text_embedding(text, max_length=1500, overlap=50):
     # Function to chunk text
-    def chunk_text(text, max_length=512, overlap=50):
+    def chunk_text(text, max_length=1500, overlap=50):
         tokens = tokenizer.encode(text, add_special_tokens=True)
         chunks = []
         for i in range(0, len(tokens), max_length - overlap):
