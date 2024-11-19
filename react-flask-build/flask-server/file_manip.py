@@ -5,25 +5,34 @@ import sys
 import fitz  # PyMuPDF
 import tiktoken
 import os
+import logging
 
 sys.stdout.reconfigure(encoding='utf-8')
 # Function to extract text from a list of PDF files
+logging.basicConfig(filename="pdf_extraction_errors.log", level=logging.ERROR, format='%(asctime)s %(message)s')
 
-def extract_text_from_pdfs(pdf_paths):
+def extract_text_from_pdfs_in_folder(folder_path):
     extracted_texts = []
-    
+
+    # Get a list of all PDF files in the folder
+    pdf_paths = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.lower().endswith('.pdf')]
+
     for pdf_path in pdf_paths:
         text = ""
         try:
             with fitz.open(pdf_path) as pdf_document:
                 for page_number in range(pdf_document.page_count):
-                    page = pdf_document.load_page(page_number)
-                    text += page.get_text() + "\n"  # Add newline for readability between pages
+                    try:
+                        page = pdf_document.load_page(page_number)
+                        text += page.get_text() + "\n"  # Add newline for readability between pages
+                    except Exception as e:
+                        logging.error(f"Error reading page {page_number} of {pdf_path}: {str(e)}")
+                        continue
         except Exception as e:
-            print(f"Error reading {pdf_path}: {str(e)}")
+            logging.error(f"Error reading {pdf_path}: {str(e)}")
             continue
         
-        extracted_texts.append(text)
+        extracted_texts.append({"file": pdf_path, "content": text})
     
     return extracted_texts
 
