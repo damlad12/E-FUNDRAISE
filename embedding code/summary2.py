@@ -102,5 +102,6 @@ if __name__ == "__main__":
     # Output the chunks
     for i, chunk in enumerate(all_chunks):
         print(call_assistant_with_file(api_key,chunk))
+        
 
    
