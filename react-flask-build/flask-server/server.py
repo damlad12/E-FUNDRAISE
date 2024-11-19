@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
-
+from file_manip import is_folder_empty
 app = Flask(__name__)
 CORS(app)  # This allows all domains to access the server. You can specify origins if needed.
 
@@ -43,6 +43,10 @@ def upload_files_to_folder(folder):
 
 @app.route("/compute_similarity", methods=["POST"])
 def compute_similarity():
+    # Check if the folders are empty
+    if is_folder_empty(UPLOAD_FOLDER_1) or is_folder_empty(UPLOAD_FOLDER_2):
+        return jsonify({"error": "One or both folders are empty. Please upload files to both folders before computing similarity."}), 400
+    
     # Placeholder similarity computation logic
     similarity_score = 0.85  # Replace with actual similarity computation logic
     return jsonify({"message": "Similarity computed successfully", "similarity_score": similarity_score}), 200
