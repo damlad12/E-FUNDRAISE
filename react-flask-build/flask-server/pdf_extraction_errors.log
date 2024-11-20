@@ -1,0 +1,258 @@
+2024-11-20 05:24:10,342 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-20 05:24:10,343 [33mPress CTRL+C to quit[0m
+2024-11-20 05:24:10,343  * Restarting with stat
+2024-11-20 05:24:12,350  * Debugger is active!
+2024-11-20 05:24:12,405  * Debugger PIN: 139-286-253
+2024-11-20 05:26:00,747 127.0.0.1 - - [20/Nov/2024 05:26:00] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-20 05:26:08,449 127.0.0.1 - - [20/Nov/2024 05:26:08] "POST /upload/folder2 HTTP/1.1" 200 -
+2024-11-20 05:26:11,223 API_KEY is not set. Please check your .env file.
+2024-11-20 05:26:11,224 127.0.0.1 - - [20/Nov/2024 05:26:11] "[35m[1mPOST /compute_similarity HTTP/1.1[0m" 500 -
+2024-11-20 05:27:26,744 API_KEY is not set. Please check your .env file.
+2024-11-20 05:27:26,745 127.0.0.1 - - [20/Nov/2024 05:27:26] "[35m[1mPOST /compute_similarity HTTP/1.1[0m" 500 -
+2024-11-20 05:27:27,701 API_KEY is not set. Please check your .env file.
+2024-11-20 05:27:27,701 127.0.0.1 - - [20/Nov/2024 05:27:27] "[35m[1mPOST /compute_similarity HTTP/1.1[0m" 500 -
+2024-11-20 05:28:01,719 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-20 05:28:01,720 [33mPress CTRL+C to quit[0m
+2024-11-20 05:28:01,721  * Restarting with stat
+2024-11-20 05:28:03,713  * Debugger is active!
+2024-11-20 05:28:03,714  * Debugger PIN: 139-286-253
+2024-11-20 05:28:15,765 127.0.0.1 - - [20/Nov/2024 05:28:15] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-20 05:28:26,667 127.0.0.1 - - [20/Nov/2024 05:28:26] "POST /upload/folder2 HTTP/1.1" 200 -
+2024-11-20 05:30:46,402 127.0.0.1 - - [20/Nov/2024 05:30:46] "POST /compute_similarity HTTP/1.1" 200 -
+2024-11-20 05:48:02,827  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/get_summary.py', reloading
+2024-11-20 05:48:03,551  * Restarting with stat
+2024-11-20 05:48:07,175  * Debugger is active!
+2024-11-20 05:48:07,175  * Debugger PIN: 139-286-253
+2024-11-20 05:48:08,383  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/file_manip.py', reloading
+2024-11-20 05:48:08,899  * Restarting with stat
+2024-11-20 05:48:11,582  * Debugger is active!
+2024-11-20 05:48:11,582  * Debugger PIN: 139-286-253
+2024-11-20 06:05:06,601 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-20 06:05:06,601 [33mPress CTRL+C to quit[0m
+2024-11-20 06:05:06,602  * Restarting with stat
+2024-11-20 06:05:09,207  * Debugger is active!
+2024-11-20 06:05:09,207  * Debugger PIN: 139-286-253
+2024-11-20 06:05:22,610 127.0.0.1 - - [20/Nov/2024 06:05:22] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-20 06:05:29,914 127.0.0.1 - - [20/Nov/2024 06:05:29] "POST /upload/folder2 HTTP/1.1" 200 -
+2024-11-20 06:07:55,817 127.0.0.1 - - [20/Nov/2024 06:07:55] "POST /compute_similarity HTTP/1.1" 200 -
+2024-11-20 06:17:43,450  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 06:17:44,283  * Restarting with stat
+2024-11-20 06:17:47,850  * Debugger is active!
+2024-11-20 06:17:47,851  * Debugger PIN: 139-286-253
+2024-11-20 06:20:18,310 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-20 06:20:18,310 [33mPress CTRL+C to quit[0m
+2024-11-20 06:20:18,310  * Restarting with stat
+2024-11-20 06:20:20,848  * Debugger is active!
+2024-11-20 06:20:20,849  * Debugger PIN: 139-286-253
+2024-11-20 06:30:12,681 127.0.0.1 - - [20/Nov/2024 06:30:12] "[33mGET /main.5dc04806b8aaece2402b.hot-update.json HTTP/1.1[0m" 404 -
+2024-11-20 06:30:13,059 127.0.0.1 - - [20/Nov/2024 06:30:13] "[33mGET /main.024835f7ab5ea238d114.hot-update.json HTTP/1.1[0m" 404 -
+2024-11-20 06:30:13,451 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxpgozdt HTTP/1.1" 200 -
+2024-11-20 06:30:13,451 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxpgpiw4 HTTP/1.1" 200 -
+2024-11-20 06:30:13,454 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxpgrbl0 HTTP/1.1" 200 -
+2024-11-20 06:30:13,455 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxpgrzk8 HTTP/1.1" 200 -
+2024-11-20 06:30:13,459 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxpgw4yo HTTP/1.1" 200 -
+2024-11-20 06:30:13,459 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxpgwv4n HTTP/1.1" 200 -
+2024-11-20 06:30:13,749 127.0.0.1 - - [20/Nov/2024 06:30:13] "POST /socket.io/?EIO=4&transport=polling&t=sxpp8nby&sid=vxBApBj8i6YTSpwHAAAB HTTP/1.1" 200 -
+2024-11-20 06:30:13,752 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxpp9dqp&sid=vxBApBj8i6YTSpwHAAAB HTTP/1.1" 200 -
+2024-11-20 06:30:13,754 127.0.0.1 - - [20/Nov/2024 06:30:13] "POST /socket.io/?EIO=4&transport=polling&t=sxppcia1&sid=HWFt7Y1WzsAHXuOTAAAD HTTP/1.1" 200 -
+2024-11-20 06:30:13,755 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxppcaml&sid=HWFt7Y1WzsAHXuOTAAAD HTTP/1.1" 200 -
+2024-11-20 06:30:13,756 127.0.0.1 - - [20/Nov/2024 06:30:13] "POST /socket.io/?EIO=4&transport=polling&t=sxppecmo&sid=McKm8TPD4mBCrx1zAAAF HTTP/1.1" 200 -
+2024-11-20 06:30:13,759 127.0.0.1 - - [20/Nov/2024 06:30:13] "GET /socket.io/?EIO=4&transport=polling&t=sxppfmid&sid=McKm8TPD4mBCrx1zAAAF HTTP/1.1" 200 -
+2024-11-20 06:30:14,055 127.0.0.1 - - [20/Nov/2024 06:30:14] "GET /socket.io/?EIO=4&transport=polling&t=sxpxz9zh&sid=HWFt7Y1WzsAHXuOTAAAD HTTP/1.1" 200 -
+2024-11-20 06:30:14,055 127.0.0.1 - - [20/Nov/2024 06:30:14] "GET /socket.io/?EIO=4&transport=polling&t=sxpy1dxg&sid=McKm8TPD4mBCrx1zAAAF HTTP/1.1" 200 -
+2024-11-20 06:43:27,197  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 06:43:27,875  * Restarting with stat
+2024-11-20 06:43:31,523  * Debugger is active!
+2024-11-20 06:43:31,523  * Debugger PIN: 139-286-253
+2024-11-20 06:43:31,625 127.0.0.1 - - [20/Nov/2024 06:43:31] "GET /socket.io/?EIO=4&transport=polling&t=terlatjm HTTP/1.1" 200 -
+2024-11-20 06:43:31,626 127.0.0.1 - - [20/Nov/2024 06:43:31] "GET /socket.io/?EIO=4&transport=polling&t=tesd1jh1 HTTP/1.1" 200 -
+2024-11-20 06:43:31,627 127.0.0.1 - - [20/Nov/2024 06:43:31] "GET /socket.io/?EIO=4&transport=polling&t=terkpwbf HTTP/1.1" 200 -
+2024-11-20 06:43:31,926 127.0.0.1 - - [20/Nov/2024 06:43:31] "POST /socket.io/?EIO=4&transport=polling&t=tetlp3s1&sid=-OxVwNsglUj6PesFAAAA HTTP/1.1" 200 -
+2024-11-20 06:43:31,928 127.0.0.1 - - [20/Nov/2024 06:43:31] "POST /socket.io/?EIO=4&transport=polling&t=tetlqzbp&sid=GGUGIKGYLUuthRbXAAAC HTTP/1.1" 200 -
+2024-11-20 06:43:31,929 127.0.0.1 - - [20/Nov/2024 06:43:31] "GET /socket.io/?EIO=4&transport=polling&t=tetlpdmi&sid=-OxVwNsglUj6PesFAAAA HTTP/1.1" 200 -
+2024-11-20 06:43:31,930 127.0.0.1 - - [20/Nov/2024 06:43:31] "POST /socket.io/?EIO=4&transport=polling&t=tetlr09h&sid=pNd0_ytuU6J06FVwAAAB HTTP/1.1" 200 -
+2024-11-20 06:43:31,931 127.0.0.1 - - [20/Nov/2024 06:43:31] "GET /socket.io/?EIO=4&transport=polling&t=tetlqy43&sid=GGUGIKGYLUuthRbXAAAC HTTP/1.1" 200 -
+2024-11-20 06:43:31,932 127.0.0.1 - - [20/Nov/2024 06:43:31] "GET /socket.io/?EIO=4&transport=polling&t=tetlrxps&sid=pNd0_ytuU6J06FVwAAAB HTTP/1.1" 200 -
+2024-11-20 06:43:32,231 127.0.0.1 - - [20/Nov/2024 06:43:32] "GET /socket.io/?EIO=4&transport=polling&t=tetufuex&sid=GGUGIKGYLUuthRbXAAAC HTTP/1.1" 200 -
+2024-11-20 06:43:32,232 127.0.0.1 - - [20/Nov/2024 06:43:32] "GET /socket.io/?EIO=4&transport=polling&t=tetuf542&sid=pNd0_ytuU6J06FVwAAAB HTTP/1.1" 200 -
+2024-11-20 06:44:29,268  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 06:44:30,021  * Restarting with stat
+2024-11-20 06:44:33,639  * Debugger is active!
+2024-11-20 06:44:33,639  * Debugger PIN: 139-286-253
+2024-11-20 06:44:33,742 127.0.0.1 - - [20/Nov/2024 06:44:33] "GET /socket.io/?EIO=4&transport=polling&t=tg3206y8 HTTP/1.1" 200 -
+2024-11-20 06:44:33,743 127.0.0.1 - - [20/Nov/2024 06:44:33] "GET /socket.io/?EIO=4&transport=polling&t=tg3fh3b3 HTTP/1.1" 200 -
+2024-11-20 06:44:33,744 127.0.0.1 - - [20/Nov/2024 06:44:33] "GET /socket.io/?EIO=4&transport=polling&t=tg3fhk25 HTTP/1.1" 200 -
+2024-11-20 06:44:33,748 127.0.0.1 - - [20/Nov/2024 06:44:33] "POST /socket.io/?EIO=4&transport=polling&t=tg5h2vrg&sid=JM3FZ8j1HxSXwlGRAAAA HTTP/1.1" 200 -
+2024-11-20 06:44:34,044 127.0.0.1 - - [20/Nov/2024 06:44:34] "POST /socket.io/?EIO=4&transport=polling&t=tg5h3y8u&sid=m_NuuOq6uEnMPWq1AAAB HTTP/1.1" 200 -
+2024-11-20 06:44:34,044 127.0.0.1 - - [20/Nov/2024 06:44:34] "GET /socket.io/?EIO=4&transport=polling&t=tg5h3qre&sid=JM3FZ8j1HxSXwlGRAAAA HTTP/1.1" 200 -
+2024-11-20 06:44:34,046 127.0.0.1 - - [20/Nov/2024 06:44:34] "POST /socket.io/?EIO=4&transport=polling&t=tg5h4295&sid=6_O_DRTysNrv2RPpAAAC HTTP/1.1" 200 -
+2024-11-20 06:44:34,047 127.0.0.1 - - [20/Nov/2024 06:44:34] "GET /socket.io/?EIO=4&transport=polling&t=tg5h3mq8&sid=m_NuuOq6uEnMPWq1AAAB HTTP/1.1" 200 -
+2024-11-20 06:44:34,048 127.0.0.1 - - [20/Nov/2024 06:44:34] "GET /socket.io/?EIO=4&transport=polling&t=tg5h4j85&sid=6_O_DRTysNrv2RPpAAAC HTTP/1.1" 200 -
+2024-11-20 06:44:34,346 127.0.0.1 - - [20/Nov/2024 06:44:34] "GET /socket.io/?EIO=4&transport=polling&t=tg5psm2n&sid=m_NuuOq6uEnMPWq1AAAB HTTP/1.1" 200 -
+2024-11-20 06:44:34,346 127.0.0.1 - - [20/Nov/2024 06:44:34] "GET /socket.io/?EIO=4&transport=polling&t=tg5pthvp&sid=6_O_DRTysNrv2RPpAAAC HTTP/1.1" 200 -
+2024-11-20 06:44:41,651 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-20 06:44:41,651 [33mPress CTRL+C to quit[0m
+2024-11-20 06:44:41,651  * Restarting with stat
+2024-11-20 06:44:44,099  * Debugger is active!
+2024-11-20 06:44:44,100  * Debugger PIN: 139-286-253
+2024-11-20 06:44:44,200 127.0.0.1 - - [20/Nov/2024 06:44:44] "GET /socket.io/?EIO=4&transport=polling&t=tgb590tf HTTP/1.1" 200 -
+2024-11-20 06:44:44,200 127.0.0.1 - - [20/Nov/2024 06:44:44] "GET /socket.io/?EIO=4&transport=polling&t=tgb4wmhf HTTP/1.1" 200 -
+2024-11-20 06:44:44,204 127.0.0.1 - - [20/Nov/2024 06:44:44] "POST /socket.io/?EIO=4&transport=polling&t=tgdp4ld3&sid=OWVhiswnU7eK-3rrAAAA HTTP/1.1" 200 -
+2024-11-20 06:44:44,500 127.0.0.1 - - [20/Nov/2024 06:44:44] "POST /socket.io/?EIO=4&transport=polling&t=tgdp5yks&sid=IhTw5sCywWZvJjK7AAAB HTTP/1.1" 200 -
+2024-11-20 06:44:44,501 127.0.0.1 - - [20/Nov/2024 06:44:44] "GET /socket.io/?EIO=4&transport=polling&t=tgdp5l5g&sid=OWVhiswnU7eK-3rrAAAA HTTP/1.1" 200 -
+2024-11-20 06:44:44,501 127.0.0.1 - - [20/Nov/2024 06:44:44] "GET /socket.io/?EIO=4&transport=polling&t=tgdp5990&sid=IhTw5sCywWZvJjK7AAAB HTTP/1.1" 200 -
+2024-11-20 06:44:44,798 127.0.0.1 - - [20/Nov/2024 06:44:44] "GET /socket.io/?EIO=4&transport=polling&t=tgdxsa3r&sid=IhTw5sCywWZvJjK7AAAB HTTP/1.1" 200 -
+2024-11-20 06:44:47,887 127.0.0.1 - - [20/Nov/2024 06:44:47] "GET /socket.io/?EIO=4&transport=polling&t=tgfrxss0 HTTP/1.1" 200 -
+2024-11-20 06:44:48,185 127.0.0.1 - - [20/Nov/2024 06:44:48] "POST /socket.io/?EIO=4&transport=polling&t=tgfs1bly&sid=WV9vDQJNiuYydaIiAAAE HTTP/1.1" 200 -
+2024-11-20 06:44:48,187 127.0.0.1 - - [20/Nov/2024 06:44:48] "GET /socket.io/?EIO=4&transport=polling&t=tgfs2rqy&sid=WV9vDQJNiuYydaIiAAAE HTTP/1.1" 200 -
+2024-11-20 06:45:02,362 127.0.0.1 - - [20/Nov/2024 06:45:02] "GET /socket.io/?EIO=4&transport=websocket&sid=OWVhiswnU7eK-3rrAAAA HTTP/1.1" 200 -
+2024-11-20 06:45:03,006 127.0.0.1 - - [20/Nov/2024 06:45:03] "GET /socket.io/?EIO=4&transport=websocket&sid=WV9vDQJNiuYydaIiAAAE HTTP/1.1" 200 -
+2024-11-20 06:45:10,220 127.0.0.1 - - [20/Nov/2024 06:45:10] "GET /socket.io/?EIO=4&transport=websocket&sid=IhTw5sCywWZvJjK7AAAB HTTP/1.1" 200 -
+2024-11-20 06:46:19,653 127.0.0.1 - - [20/Nov/2024 06:46:19] "GET /socket.io/?EIO=4&transport=polling&t=tiey3ezm HTTP/1.1" 200 -
+2024-11-20 06:46:19,653 127.0.0.1 - - [20/Nov/2024 06:46:19] "GET /socket.io/?EIO=4&transport=polling&t=tiey3207 HTTP/1.1" 200 -
+2024-11-20 06:46:19,896 127.0.0.1 - - [20/Nov/2024 06:46:19] "POST /socket.io/?EIO=4&transport=polling&t=tif6nbr7&sid=GxRVKlA37pe4WqWbAAAG HTTP/1.1" 200 -
+2024-11-20 06:46:19,951 127.0.0.1 - - [20/Nov/2024 06:46:19] "GET /socket.io/?EIO=4&transport=polling&t=tif6oyo3&sid=GxRVKlA37pe4WqWbAAAG HTTP/1.1" 200 -
+2024-11-20 06:46:19,956 127.0.0.1 - - [20/Nov/2024 06:46:19] "GET /socket.io/?EIO=4&transport=polling&t=tiff7h6p&sid=GxRVKlA37pe4WqWbAAAG HTTP/1.1" 200 -
+2024-11-20 06:46:40,058 127.0.0.1 - - [20/Nov/2024 06:46:40] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-20 06:46:40,263 127.0.0.1 - - [20/Nov/2024 06:46:40] "POST /upload/folder2 HTTP/1.1" 200 -
+2024-11-20 06:51:30,714 127.0.0.1 - - [20/Nov/2024 06:51:30] "POST /compute_similarity HTTP/1.1" 200 -
+2024-11-20 09:15:25,245  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 09:15:25,967  * Restarting with stat
+2024-11-20 09:15:29,481  * Debugger is active!
+2024-11-20 09:15:29,481  * Debugger PIN: 139-286-253
+2024-11-20 09:15:29,575 127.0.0.1 - - [20/Nov/2024 09:15:29] "GET /socket.io/?EIO=4&transport=polling&t=yu6uu7cv HTTP/1.1" 200 -
+2024-11-20 09:15:29,578 127.0.0.1 - - [20/Nov/2024 09:15:29] "POST /socket.io/?EIO=4&transport=polling&t=yu95t255&sid=eBUMWT-1Ck93Pve8AAAA HTTP/1.1" 200 -
+2024-11-20 09:15:29,872 127.0.0.1 - - [20/Nov/2024 09:15:29] "GET /socket.io/?EIO=4&transport=polling&t=yu95uvub&sid=eBUMWT-1Ck93Pve8AAAA HTTP/1.1" 200 -
+2024-11-20 09:20:20,582 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-20 09:20:20,583 [33mPress CTRL+C to quit[0m
+2024-11-20 09:20:20,583  * Restarting with stat
+2024-11-20 09:20:22,885  * Debugger is active!
+2024-11-20 09:20:22,886  * Debugger PIN: 139-286-253
+2024-11-20 09:20:22,976 127.0.0.1 - - [20/Nov/2024 09:20:22] "GET /socket.io/?EIO=4&transport=polling&t=z0i8djqe HTTP/1.1" 200 -
+2024-11-20 09:20:22,980 127.0.0.1 - - [20/Nov/2024 09:20:22] "POST /socket.io/?EIO=4&transport=polling&t=z0jc4jou&sid=-pDeSmnrTIthKIcWAAAA HTTP/1.1" 200 -
+2024-11-20 09:20:23,265 127.0.0.1 - - [20/Nov/2024 09:20:23] "GET /socket.io/?EIO=4&transport=polling&t=z0jc4dfj&sid=-pDeSmnrTIthKIcWAAAA HTTP/1.1" 200 -
+2024-11-20 09:21:14,572 127.0.0.1 - - [20/Nov/2024 09:21:14] "GET /socket.io/?EIO=4&transport=websocket&sid=-pDeSmnrTIthKIcWAAAA HTTP/1.1" 200 -
+2024-11-20 09:21:39,510 127.0.0.1 - - [20/Nov/2024 09:21:39] "GET /socket.io/?EIO=4&transport=polling&t=z26fuyom HTTP/1.1" 200 -
+2024-11-20 09:21:39,511 127.0.0.1 - - [20/Nov/2024 09:21:39] "GET /socket.io/?EIO=4&transport=polling&t=z26fvt5p HTTP/1.1" 200 -
+2024-11-20 09:21:39,754 127.0.0.1 - - [20/Nov/2024 09:21:39] "POST /socket.io/?EIO=4&transport=polling&t=z26oetg0&sid=tJen9LWLd2coAyEmAAAD HTTP/1.1" 200 -
+2024-11-20 09:21:39,807 127.0.0.1 - - [20/Nov/2024 09:21:39] "GET /socket.io/?EIO=4&transport=polling&t=z26oec5c&sid=tJen9LWLd2coAyEmAAAD HTTP/1.1" 200 -
+2024-11-20 09:21:39,811 127.0.0.1 - - [20/Nov/2024 09:21:39] "GET /socket.io/?EIO=4&transport=polling&t=z26wxasc&sid=tJen9LWLd2coAyEmAAAD HTTP/1.1" 200 -
+2024-11-20 09:21:55,632 127.0.0.1 - - [20/Nov/2024 09:21:55] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-20 09:22:06,116 127.0.0.1 - - [20/Nov/2024 09:22:06] "POST /upload/folder2 HTTP/1.1" 200 -
+2024-11-20 09:24:50,972 127.0.0.1 - - [20/Nov/2024 09:24:50] "POST /compute_similarity HTTP/1.1" 200 -
+2024-11-20 09:30:58,224 127.0.0.1 - - [20/Nov/2024 09:30:58] "GET /socket.io/?EIO=4&transport=websocket&sid=tJen9LWLd2coAyEmAAAD HTTP/1.1" 200 -
+2024-11-20 09:30:58,539 127.0.0.1 - - [20/Nov/2024 09:30:58] "GET /socket.io/?EIO=4&transport=polling&t=ze5ejnod HTTP/1.1" 200 -
+2024-11-20 09:30:58,539 127.0.0.1 - - [20/Nov/2024 09:30:58] "GET /socket.io/?EIO=4&transport=polling&t=ze5ekar0 HTTP/1.1" 200 -
+2024-11-20 09:30:58,781 127.0.0.1 - - [20/Nov/2024 09:30:58] "POST /socket.io/?EIO=4&transport=polling&t=ze5n2rld&sid=BgxZJ6gRZT1lvLkwAAAG HTTP/1.1" 200 -
+2024-11-20 09:30:58,834 127.0.0.1 - - [20/Nov/2024 09:30:58] "GET /socket.io/?EIO=4&transport=polling&t=ze5n3027&sid=BgxZJ6gRZT1lvLkwAAAG HTTP/1.1" 200 -
+2024-11-20 09:30:58,837 127.0.0.1 - - [20/Nov/2024 09:30:58] "GET /socket.io/?EIO=4&transport=polling&t=ze5vlc7y&sid=BgxZJ6gRZT1lvLkwAAAG HTTP/1.1" 200 -
+2024-11-20 09:31:28,977 127.0.0.1 - - [20/Nov/2024 09:31:28] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-20 09:31:30,170 127.0.0.1 - - [20/Nov/2024 09:31:30] "POST /upload/folder2 HTTP/1.1" 200 -
+2024-11-20 09:32:28,497 Error during chunk summarization (attempt 1): The run failed to complete successfully.
+2024-11-20 09:35:46,531 127.0.0.1 - - [20/Nov/2024 09:35:46] "POST /compute_similarity HTTP/1.1" 200 -
+2024-11-20 09:43:22,148  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 09:43:22,834  * Restarting with stat
+2024-11-20 09:43:26,611  * Debugger is active!
+2024-11-20 09:43:26,611  * Debugger PIN: 139-286-253
+2024-11-20 09:43:26,713 127.0.0.1 - - [20/Nov/2024 09:43:26] "GET /socket.io/?EIO=4&transport=polling&t=zu52b630 HTTP/1.1" 200 -
+2024-11-20 09:43:26,717 127.0.0.1 - - [20/Nov/2024 09:43:26] "POST /socket.io/?EIO=4&transport=polling&t=zu7h1r1g&sid=JzQCdIUDypaUVoSVAAAA HTTP/1.1" 200 -
+2024-11-20 09:43:27,011 127.0.0.1 - - [20/Nov/2024 09:43:27] "GET /socket.io/?EIO=4&transport=polling&t=zu7h2t1l&sid=JzQCdIUDypaUVoSVAAAA HTTP/1.1" 200 -
+2024-11-20 09:46:23,222 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-20 09:46:23,223 [33mPress CTRL+C to quit[0m
+2024-11-20 09:46:23,223  * Restarting with stat
+2024-11-20 09:46:25,617  * Debugger is active!
+2024-11-20 09:46:25,618  * Debugger PIN: 139-286-253
+2024-11-20 09:46:25,714 127.0.0.1 - - [20/Nov/2024 09:46:25] "GET /socket.io/?EIO=4&transport=polling&t=zxza50k4 HTTP/1.1" 200 -
+2024-11-20 09:46:25,714 127.0.0.1 - - [20/Nov/2024 09:46:25] "GET /socket.io/?EIO=4&transport=polling&t=zxza4mdq HTTP/1.1" 200 -
+2024-11-20 09:46:25,718 127.0.0.1 - - [20/Nov/2024 09:46:25] "POST /socket.io/?EIO=4&transport=polling&t=zy0qeq79&sid=OKsloVnSUAONNVmLAAAA HTTP/1.1" 200 -
+2024-11-20 09:46:26,002 127.0.0.1 - - [20/Nov/2024 09:46:26] "GET /socket.io/?EIO=4&transport=polling&t=zy0qebrk&sid=OKsloVnSUAONNVmLAAAA HTTP/1.1" 200 -
+2024-11-20 09:48:03,426 127.0.0.1 - - [20/Nov/2024 09:48:03] "[33mGET /main.d8218979ba2990b592e8.hot-update.json HTTP/1.1[0m" 404 -
+2024-11-20 09:48:03,438 127.0.0.1 - - [20/Nov/2024 09:48:03] "GET /socket.io/?EIO=4&transport=websocket&sid=OKsloVnSUAONNVmLAAAA HTTP/1.1" 200 -
+2024-11-20 09:48:04,130 127.0.0.1 - - [20/Nov/2024 09:48:04] "GET /socket.io/?EIO=4&transport=polling&t=004czo8o HTTP/1.1" 200 -
+2024-11-20 09:48:04,132 127.0.0.1 - - [20/Nov/2024 09:48:04] "GET /socket.io/?EIO=4&transport=polling&t=004d1vu1 HTTP/1.1" 200 -
+2024-11-20 09:48:04,132 127.0.0.1 - - [20/Nov/2024 09:48:04] "GET /socket.io/?EIO=4&transport=polling&t=004d0bbj HTTP/1.1" 200 -
+2024-11-20 09:48:04,134 127.0.0.1 - - [20/Nov/2024 09:48:04] "GET /socket.io/?EIO=4&transport=polling&t=004d1bop HTTP/1.1" 200 -
+2024-11-20 09:48:04,363 127.0.0.1 - - [20/Nov/2024 09:48:04] "POST /socket.io/?EIO=4&transport=polling&t=004lm06n&sid=FtA_jnNGj9_IyeZmAAAE HTTP/1.1" 200 -
+2024-11-20 09:48:04,419 127.0.0.1 - - [20/Nov/2024 09:48:04] "POST /socket.io/?EIO=4&transport=polling&t=004lnxce&sid=xApHVwuvaGmuGOtQAAAG HTTP/1.1" 200 -
+2024-11-20 09:48:04,419 127.0.0.1 - - [20/Nov/2024 09:48:04] "GET /socket.io/?EIO=4&transport=polling&t=004lnym5&sid=FtA_jnNGj9_IyeZmAAAE HTTP/1.1" 200 -
+2024-11-20 09:48:04,421 127.0.0.1 - - [20/Nov/2024 09:48:04] "GET /socket.io/?EIO=4&transport=polling&t=004lnpzj&sid=xApHVwuvaGmuGOtQAAAG HTTP/1.1" 200 -
+2024-11-20 09:48:04,434 127.0.0.1 - - [20/Nov/2024 09:48:04] "GET /socket.io/?EIO=4&transport=polling&t=004uazrf&sid=xApHVwuvaGmuGOtQAAAG HTTP/1.1" 200 -
+2024-11-20 09:48:41,112 127.0.0.1 - - [20/Nov/2024 09:48:41] "POST /upload/folder1 HTTP/1.1" 200 -
+2024-11-20 09:48:41,262 127.0.0.1 - - [20/Nov/2024 09:48:41] "POST /upload/folder2 HTTP/1.1" 200 -
+2024-11-20 09:50:51,348 Error during chunk summarization (attempt 1): The run failed to complete successfully.
+2024-11-20 09:54:53,664 127.0.0.1 - - [20/Nov/2024 09:54:53] "POST /compute_similarity HTTP/1.1" 200 -
+2024-11-20 10:44:00,857  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 10:44:01,544  * Restarting with stat
+2024-11-20 10:44:04,899  * Debugger is active!
+2024-11-20 10:44:04,900  * Debugger PIN: 139-286-253
+2024-11-20 10:44:04,990 127.0.0.1 - - [20/Nov/2024 10:44:04] "GET /socket.io/?EIO=4&transport=polling&t=2045y9lw HTTP/1.1" 200 -
+2024-11-20 10:44:04,991 127.0.0.1 - - [20/Nov/2024 10:44:04] "GET /socket.io/?EIO=4&transport=polling&t=204xqx0l HTTP/1.1" 200 -
+2024-11-20 10:44:05,273 127.0.0.1 - - [20/Nov/2024 10:44:05] "POST /socket.io/?EIO=4&transport=polling&t=2062ejrp&sid=kHfSupKJXy9FWGGpAAAA HTTP/1.1" 200 -
+2024-11-20 10:44:05,276 127.0.0.1 - - [20/Nov/2024 10:44:05] "POST /socket.io/?EIO=4&transport=polling&t=2062fvql&sid=pmRxmUMwtEBdNfNiAAAB HTTP/1.1" 200 -
+2024-11-20 10:44:05,276 127.0.0.1 - - [20/Nov/2024 10:44:05] "GET /socket.io/?EIO=4&transport=polling&t=2062ek2s&sid=kHfSupKJXy9FWGGpAAAA HTTP/1.1" 200 -
+2024-11-20 10:44:05,277 127.0.0.1 - - [20/Nov/2024 10:44:05] "GET /socket.io/?EIO=4&transport=polling&t=2062ffdo&sid=pmRxmUMwtEBdNfNiAAAB HTTP/1.1" 200 -
+2024-11-20 10:44:05,504 127.0.0.1 - - [20/Nov/2024 10:44:05] "GET /socket.io/?EIO=4&transport=polling&t=206b00q5&sid=pmRxmUMwtEBdNfNiAAAB HTTP/1.1" 200 -
+2024-11-20 10:46:33,886  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/get_summary.py', reloading
+2024-11-20 10:46:34,611  * Restarting with stat
+2024-11-20 10:46:39,596  * Debugger is active!
+2024-11-20 10:46:39,597  * Debugger PIN: 139-286-253
+2024-11-20 10:46:39,695 127.0.0.1 - - [20/Nov/2024 10:46:39] "GET /socket.io/?EIO=4&transport=polling&t=23ezq0uz HTTP/1.1" 200 -
+2024-11-20 10:46:39,695 127.0.0.1 - - [20/Nov/2024 10:46:39] "GET /socket.io/?EIO=4&transport=polling&t=23ezq9ni HTTP/1.1" 200 -
+2024-11-20 10:46:39,700 127.0.0.1 - - [20/Nov/2024 10:46:39] "POST /socket.io/?EIO=4&transport=polling&t=23gzzxsp&sid=2HFQjinRJRSc5IAzAAAA HTTP/1.1" 200 -
+2024-11-20 10:46:39,995 127.0.0.1 - - [20/Nov/2024 10:46:39] "POST /socket.io/?EIO=4&transport=polling&t=23h0381f&sid=NJWmo4NcQjmRxbh1AAAB HTTP/1.1" 200 -
+2024-11-20 10:46:39,996 127.0.0.1 - - [20/Nov/2024 10:46:39] "GET /socket.io/?EIO=4&transport=polling&t=23h043mx&sid=NJWmo4NcQjmRxbh1AAAB HTTP/1.1" 200 -
+2024-11-20 10:46:39,996 127.0.0.1 - - [20/Nov/2024 10:46:39] "GET /socket.io/?EIO=4&transport=polling&t=23h03cie&sid=2HFQjinRJRSc5IAzAAAA HTTP/1.1" 200 -
+2024-11-20 10:46:40,234 127.0.0.1 - - [20/Nov/2024 10:46:40] "GET /socket.io/?EIO=4&transport=polling&t=23h8o2s9&sid=NJWmo4NcQjmRxbh1AAAB HTTP/1.1" 200 -
+2024-11-20 10:49:05,417  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/get_summary.py', reloading
+2024-11-20 10:49:06,077  * Restarting with stat
+2024-11-20 10:49:28,750  * Debugger is active!
+2024-11-20 10:49:28,751  * Debugger PIN: 139-286-253
+2024-11-20 10:49:28,856 127.0.0.1 - - [20/Nov/2024 10:49:28] "GET /socket.io/?EIO=4&transport=polling&t=26o9ybsd HTTP/1.1" 200 -
+2024-11-20 10:49:28,856 127.0.0.1 - - [20/Nov/2024 10:49:28] "GET /socket.io/?EIO=4&transport=polling&t=26ni65zq HTTP/1.1" 200 -
+2024-11-20 10:49:29,151 127.0.0.1 - - [20/Nov/2024 10:49:29] "POST /socket.io/?EIO=4&transport=polling&t=273liq49&sid=4grPm502bRX5TOP4AAAA HTTP/1.1" 200 -
+2024-11-20 10:49:29,157 127.0.0.1 - - [20/Nov/2024 10:49:29] "POST /socket.io/?EIO=4&transport=polling&t=273lnz7j&sid=oMJ1WWpxzjwvsk3dAAAB HTTP/1.1" 200 -
+2024-11-20 10:49:29,157 127.0.0.1 - - [20/Nov/2024 10:49:29] "GET /socket.io/?EIO=4&transport=polling&t=273ln8st&sid=4grPm502bRX5TOP4AAAA HTTP/1.1" 200 -
+2024-11-20 10:49:29,159 127.0.0.1 - - [20/Nov/2024 10:49:29] "GET /socket.io/?EIO=4&transport=polling&t=273lnmo6&sid=oMJ1WWpxzjwvsk3dAAAB HTTP/1.1" 200 -
+2024-11-20 10:49:29,392 127.0.0.1 - - [20/Nov/2024 10:49:29] "GET /socket.io/?EIO=4&transport=polling&t=273u9exg&sid=oMJ1WWpxzjwvsk3dAAAB HTTP/1.1" 200 -
+2024-11-20 10:51:15,032  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 10:51:15,885  * Restarting with stat
+2024-11-20 10:51:21,715  * Debugger is active!
+2024-11-20 10:51:21,716  * Debugger PIN: 139-286-253
+2024-11-20 10:51:21,813 127.0.0.1 - - [20/Nov/2024 10:51:21] "GET /socket.io/?EIO=4&transport=polling&t=29ftbowt HTTP/1.1" 200 -
+2024-11-20 10:51:21,814 127.0.0.1 - - [20/Nov/2024 10:51:21] "GET /socket.io/?EIO=4&transport=polling&t=29fta1xw HTTP/1.1" 200 -
+2024-11-20 10:51:21,818 127.0.0.1 - - [20/Nov/2024 10:51:21] "POST /socket.io/?EIO=4&transport=polling&t=29j79lva&sid=fEhd4bLbBTBzULwaAAAA HTTP/1.1" 200 -
+2024-11-20 10:51:22,114 127.0.0.1 - - [20/Nov/2024 10:51:22] "POST /socket.io/?EIO=4&transport=polling&t=29j7dhcs&sid=w0tfxqhoX01ePJmfAAAB HTTP/1.1" 200 -
+2024-11-20 10:51:22,115 127.0.0.1 - - [20/Nov/2024 10:51:22] "GET /socket.io/?EIO=4&transport=polling&t=29j7d5w9&sid=fEhd4bLbBTBzULwaAAAA HTTP/1.1" 200 -
+2024-11-20 10:51:22,116 127.0.0.1 - - [20/Nov/2024 10:51:22] "GET /socket.io/?EIO=4&transport=polling&t=29j7d6gy&sid=w0tfxqhoX01ePJmfAAAB HTTP/1.1" 200 -
+2024-11-20 10:51:22,354 127.0.0.1 - - [20/Nov/2024 10:51:22] "GET /socket.io/?EIO=4&transport=polling&t=29jfzxq8&sid=w0tfxqhoX01ePJmfAAAB HTTP/1.1" 200 -
+2024-11-20 10:53:57,268  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 10:53:58,093  * Restarting with stat
+2024-11-20 10:54:03,827  * Debugger is active!
+2024-11-20 10:54:03,828  * Debugger PIN: 139-286-253
+2024-11-20 10:54:03,931 127.0.0.1 - - [20/Nov/2024 10:54:03] "GET /socket.io/?EIO=4&transport=polling&t=2cwt9pxa HTTP/1.1" 200 -
+2024-11-20 10:54:03,931 127.0.0.1 - - [20/Nov/2024 10:54:03] "GET /socket.io/?EIO=4&transport=polling&t=2cwt9drg HTTP/1.1" 200 -
+2024-11-20 10:54:03,936 127.0.0.1 - - [20/Nov/2024 10:54:03] "POST /socket.io/?EIO=4&transport=polling&t=2d04hz3c&sid=o0ChfSPgOT7BB3Q6AAAA HTTP/1.1" 200 -
+2024-11-20 10:54:04,232 127.0.0.1 - - [20/Nov/2024 10:54:04] "POST /socket.io/?EIO=4&transport=polling&t=2d04lncf&sid=lDC7Nu7LPWv9Dd3FAAAB HTTP/1.1" 200 -
+2024-11-20 10:54:04,232 127.0.0.1 - - [20/Nov/2024 10:54:04] "GET /socket.io/?EIO=4&transport=polling&t=2d04lwix&sid=o0ChfSPgOT7BB3Q6AAAA HTTP/1.1" 200 -
+2024-11-20 10:54:04,233 127.0.0.1 - - [20/Nov/2024 10:54:04] "GET /socket.io/?EIO=4&transport=polling&t=2d04lj69&sid=lDC7Nu7LPWv9Dd3FAAAB HTTP/1.1" 200 -
+2024-11-20 10:54:04,472 127.0.0.1 - - [20/Nov/2024 10:54:04] "GET /socket.io/?EIO=4&transport=polling&t=2d0d6erh&sid=lDC7Nu7LPWv9Dd3FAAAB HTTP/1.1" 200 -
+2024-11-20 11:01:51,608  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/server.py', reloading
+2024-11-20 11:01:52,379  * Restarting with stat
+2024-11-20 11:01:58,286  * Debugger is active!
+2024-11-20 11:01:58,287  * Debugger PIN: 139-286-253
+2024-11-20 11:01:58,385 127.0.0.1 - - [20/Nov/2024 11:01:58] "GET /socket.io/?EIO=4&transport=polling&t=2n3bp4q3 HTTP/1.1" 200 -
+2024-11-20 11:01:58,385 127.0.0.1 - - [20/Nov/2024 11:01:58] "GET /socket.io/?EIO=4&transport=polling&t=2n28q68f HTTP/1.1" 200 -
+2024-11-20 11:01:58,680 127.0.0.1 - - [20/Nov/2024 11:01:58] "POST /socket.io/?EIO=4&transport=polling&t=2n6dhehe&sid=z_bDOgKYEWsgv0AoAAAA HTTP/1.1" 200 -
+2024-11-20 11:01:58,685 127.0.0.1 - - [20/Nov/2024 11:01:58] "POST /socket.io/?EIO=4&transport=polling&t=2n6dmubc&sid=8WSSmcjR9QMHcQHsAAAB HTTP/1.1" 200 -
+2024-11-20 11:01:58,685 127.0.0.1 - - [20/Nov/2024 11:01:58] "GET /socket.io/?EIO=4&transport=polling&t=2n6dlvzh&sid=z_bDOgKYEWsgv0AoAAAA HTTP/1.1" 200 -
+2024-11-20 11:01:58,686 127.0.0.1 - - [20/Nov/2024 11:01:58] "GET /socket.io/?EIO=4&transport=polling&t=2n6dmb2v&sid=8WSSmcjR9QMHcQHsAAAB HTTP/1.1" 200 -
+2024-11-20 11:01:58,920 127.0.0.1 - - [20/Nov/2024 11:01:58] "GET /socket.io/?EIO=4&transport=polling&t=2n6m8ivk&sid=8WSSmcjR9QMHcQHsAAAB HTTP/1.1" 200 -
+2024-11-20 11:09:04,112  * Detected change in '/mnt/c/Users/carther/Desktop/EC463_Senior_Design_eFundraise/E-FUNDRAISE/react-flask-build/flask-server/get_summary.py', reloading
+2024-11-20 11:09:04,940  * Restarting with stat

@@ -1,98 +1,44 @@
-import openai
+# get_summary.py
+
 import time
 import sys
-import fitz  # PyMuPDF
 import tiktoken
 import os
 import torch
-from transformers import BertTokenizer, BertModel
+from transformers import BertTokenizer, BertModel, BartTokenizer, BartForConditionalGeneration
+import numpy as np
 
-def call_assistant_with_file(api_key, chunk):
-    # Set the OpenAI API key
-    openai.api_key = api_key
-    
-    try:
-        # Create a new thread
-        print("Attempting to create a new thread...")
-        thread = openai.beta.threads.create()
-        print(f"Thread created successfully. Thread ID: {thread.id}")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-        # Add a message from the user
-        try:
-            print("Adding message to the thread...")
-            message = openai.beta.threads.messages.create(
-                thread_id=thread.id,
-                role="user",
-                content=chunk
-            )
-            print("Message added successfully.")
-        except Exception as e:
-            print(f"Failed to add message to the thread. Error: {e}")
-            raise
+# Initialize BERT tokenizer and model
+bert_tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+bert_model = BertModel.from_pretrained('bert-base-uncased')
+bert_model.eval()  # Set the model to evaluation mode
+bert_model.to(device)
 
-        # Create a run with the assistant
-        try:
-            print("Creating a run with the assistant...")
-            run = openai.beta.threads.runs.create(
-                thread_id=thread.id,
-                assistant_id="asst_e4AK3QNJsqDWCU5tDjVioqsv"
-            )
-            print(f"Run created successfully. Run ID: {run.id}")
-        except Exception as e:
-            print(f"Failed to create a run with the assistant. Error: {e}")
-            raise
+# Initialize summarization tokenizer and model
+summarizer_tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
+summarizer_model = BartForConditionalGeneration.from_pretrained('facebook/bart-large-cnn')
+summarizer_model.to(device)
+summarizer_model.eval()
 
-        # Retrieve the run's current state
-        try:
-            print("Polling the run's status...")
-            while True:
-                run = openai.beta.threads.runs.retrieve(
-                    thread_id=thread.id,
-                    run_id=run.id
-                )
-                print(f"Current run status: {run.status}")
-                if run.status == "completed":
-                    print("Run completed successfully.")
-                    break
-                elif run.status == "failed":
-                    raise Exception("The run failed to complete successfully.")
-                # Wait for a short period before polling again
-                time.sleep(2)
-        except Exception as e:
-            print(f"Failed while polling run status. Error: {e}")
-            raise
+def summarize_text_locally(text):
+    inputs = summarizer_tokenizer([text], max_length=1024, truncation=True, return_tensors='pt')
+    inputs = {key: value.to(device) for key, value in inputs.items()}
 
-        # Retrieve and print messages from the thread
-        try:
-            print("Retrieving messages from the thread...")
-            messages = openai.beta.threads.messages.list(
-                thread_id=thread.id
-            )
-            print("Messages retrieved successfully.")
-        except Exception as e:
-            print(f"Failed to retrieve messages from the thread. Error: {e}")
-            raise
+    summary_ids = summarizer_model.generate(
+        inputs['input_ids'],
+        num_beams=4,
+        max_length=200,
+        early_stopping=True
+    )
+    summary = summarizer_tokenizer.decode(summary_ids[0], skip_special_tokens=True)
+    return summary
 
-        # Extract the content from the first message
-        try:
-            result_content = messages.data[0].content[0].text.value
-            print("Message content extracted successfully.")
-            return result_content
-        except Exception as e:
-            print(f"Failed to extract message content. Error: {e}")
-            raise
-
-    except Exception as e:
-        print(f"An error occurred in `call_assistant_with_file`: {e}")
-        raise Exception("The run failed to complete successfully.")
-
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-model = BertModel.from_pretrained('bert-base-uncased')
-
-def get_text_embedding(text, max_length=1500, overlap=50):
+def get_text_embedding(text, max_length=512, overlap=50):
     # Function to chunk text
-    def chunk_text(text, max_length=1500, overlap=50):
-        tokens = tokenizer.encode(text, add_special_tokens=True)
+    def chunk_text(text, max_length=512, overlap=50):
+        tokens = bert_tokenizer.encode(text, add_special_tokens=True)
         chunks = []
         for i in range(0, len(tokens), max_length - overlap):
             chunk = tokens[i:i + max_length]
@@ -105,12 +51,9 @@ def get_text_embedding(text, max_length=1500, overlap=50):
     # Get embeddings for each chunk
     embeddings = []
     for chunk in chunks:
-        inputs = tokenizer.decode(chunk)
-        input_tensor = tokenizer(inputs, return_tensors='pt', padding=True, truncation=True)
-        
+        input_ids = torch.tensor([chunk]).to(device)
         with torch.no_grad():
-            outputs = model(**input_tensor)
-        
+            outputs = bert_model(input_ids)
         # Use the [CLS] token's embedding for each chunk
         chunk_embedding = outputs.last_hidden_state[:, 0, :]
         embeddings.append(chunk_embedding)
@@ -119,6 +62,7 @@ def get_text_embedding(text, max_length=1500, overlap=50):
     final_embedding = torch.mean(torch.stack(embeddings), dim=0)
 
     return final_embedding
+
 def cosine_similarity(profile_embedding, grant_embedding):
     profile_embedding = profile_embedding.view(-1)
     grant_embedding = grant_embedding.view(-1)

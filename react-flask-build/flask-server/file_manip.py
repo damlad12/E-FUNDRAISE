@@ -1,6 +1,5 @@
+# file_manip.py
 
-import openai
-import time
 import sys
 import fitz  # PyMuPDF
 import tiktoken
@@ -31,15 +30,15 @@ def extract_text_from_pdfs_in_folder(folder_path):
         except Exception as e:
             logging.error(f"Error reading {pdf_path}: {str(e)}")
             continue
-        
+
         extracted_texts.append({"file": pdf_path, "content": text})
-    
+
     return extracted_texts
 
 def split_text_into_chunks(text, max_tokens=2000):
     # Use a tokenizer compatible with GPT-3.5 and GPT-4
     tokenizer = tiktoken.get_encoding("cl100k_base")
-    
+
     tokens = tokenizer.encode(text)
     chunks = []
 
@@ -47,10 +46,12 @@ def split_text_into_chunks(text, max_tokens=2000):
     for i in range(0, len(tokens), max_tokens):
         chunk = tokens[i:i + max_tokens]
         chunks.append(tokenizer.decode(chunk))
-    
+
     return chunks
 
 def is_folder_empty(folder_path):
     # List all items in the folder
     return len(os.listdir(folder_path)) == 0
 
+def extract_text_from_text_input(text_input):
+    return [{'file': 'text_input', 'content': text_input}]
